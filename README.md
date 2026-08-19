@@ -2,25 +2,29 @@
 
 [![Install GitHub App](https://img.shields.io/badge/GitHub_App-Install-blue?logo=github)](https://github.com/apps/priestyai)
 [![Machine Account](https://img.shields.io/badge/Machine_User-@PriestyAI-181717?logo=github)](https://github.com/PriestyAI)
+[![Source Code](https://img.shields.io/badge/Source_Code-Monorepo-181717?logo=github)](https://github.com/Priestytheplushie/PriestyAI)
 [![Add to Discord](https://img.shields.io/badge/Discord-Add_to_Server-5865F2?logo=discord&logoColor=white)](https://discord.com/oauth2/authorize?client_id=1509364708476452894)
 [![User App](https://img.shields.io/badge/User_App-Install_to_Account-eb459e?logo=discord&logoColor=white)](https://discord.com/oauth2/authorize?client_id=1509364708476452894)
 
-PriestyAI is an autonomous AI ecosystem that brings intelligent developer and community workflows natively to your chosen workspace. Whether acting as a transparent pair programmer on **GitHub** or an interactive, multi-modal companion on **Discord**, PriestyAI operates alongside your team rather than as an opaque black box.
+PriestyAI is an autonomous AI ecosystem that brings intelligent developer and community workflows natively to your workspace. Whether acting as a transparent pair programmer on **GitHub** or an interactive, multi-modal companion on **Discord**, PriestyAI operates alongside your team rather than as an opaque black box.
+
+> [!NOTE]
+> This is the official machine account and service landing page. Looking for the underlying source code, architecture, or self-hosting supervisor? Visit the [PriestyAI Source Code Monorepo](https://github.com/Priestytheplushie/PriestyAI).
 
 ---
 
 ## QuickStart
 
-Get PriestyAI running in your workspace:
+Get PriestyAI running in your workspace in less than two minutes:
 
 ### On GitHub (Pair Programmer)
 1. **Install the App:** Add [PriestyAI](https://github.com/apps/priestyai) to your repository or organization.
-2. **Invite the Machine User:** Go to repository **Settings** &rarr; **Collaborators** and invite `@PriestyAI` with write access *(auto-accepted within 30 seconds)*.
-3. **Assign an Issue:** Assign `@PriestyAI` to any issue (or comment `@PriestyAI work on this`). PriestyAI will open a Draft PR with a step-by-step implementation plan.
+2. **Invite the Machine User:** Go to your repository **Settings** &rarr; **Collaborators** and invite `@PriestyAI` with write access *(automatically accepted within 30 seconds)*.
+3. **Assign an Issue:** Assign `@PriestyAI` to any issue (or comment `@PriestyAI work on this`). PriestyAI will open a Draft PR with a step-by-step implementation plan for your approval.
 
 ### On Discord (AI Companion)
 1. **Invite PriestyAI:** Add [PriestyAI](https://discord.com/oauth2/authorize?client_id=1509364708476452894) to your Discord server, or install it to your personal account as a **User App**.
-2. **Configure Features:** Run `/config` to customize active tool pipelines, system instructions, or Server News.
+2. **Configure Features:** Run `/config` to customize active tool pipelines, custom system instructions, reasoning depth, or Server News.
 3. **Start Chatting:** Mention `@PriestyAI` in channels, reply to messages, or run `/chat`.
 
 ---
@@ -39,8 +43,8 @@ Assign Issue ──▶ Draft PR Opened ──▶ Review & Approve ──▶ Sand
 ```
 
 1. **Assign:** Add `@PriestyAI` under **Assignees** on an issue (or comment `@PriestyAI work on this`).
-2. **Review Plan:** PriestyAI creates a clean feature branch and opens a **Draft Pull Request** containing a checklist plan.
-3. **Approve:** React with 👍, 🚀, 👀 or comment @PriestyAI `"approved"` / `"LGTM"`.
+2. **Review Plan:** PriestyAI analyzes your codebase, creates a clean feature branch, and opens a **Draft Pull Request** containing a checklist plan.
+3. **Approve:** React with 👍, 🚀, 👀 or comment `@PriestyAI approved` / `"LGTM"`.
 4. **Autonomous Build & Verification:** PriestyAI implements changes, runs test/linter suites in an isolated Docker container with self-healing passes, creates atomic commits, and publishes a native GitHub Check Run.
 5. **Ready for Review:** Once all checks pass, PriestyAI marks the PR **Ready for Review** and requests maintainer sign-off.
 
@@ -48,8 +52,8 @@ Assign Issue ──▶ Draft PR Opened ──▶ Review & Approve ──▶ Sand
 Add `@PriestyAI` under **Reviewers** on any open PR. PriestyAI inspects diffs against the base branch's `CONTRIBUTING.md`, runs checks, and submits reviews with 1-click native suggestion blocks. Comment `@PriestyAI fix <notes>` or submit *Changes Requested* to trigger autonomous fix commits.
 
 ### 3. Discussions & ChatOps
-* **Discussions Q&A:** Auto-answers questions in **Q&A**, **Questions**, or **Help** categories using repository files.
-* **ChatOps:** Administrators can @mention PriestyAI to execute and chain commands, such as closing PRs or assigning members
+* **Discussions Q&A:** Auto-answers questions in **Q&A**, **Questions**, or **Help** categories using actual repository files.
+* **ChatOps:** Administrators can @mention PriestyAI to execute and chain commands, such as merging PRs, assigning reviewers, locking conversations, or modifying labels.
 
 ---
 
@@ -71,7 +75,7 @@ Compiles fully voiced, multi-scene MP4 news broadcast videos recapping your serv
 PriestyAI compiles custom Python layout specifications into modern Discord UI Components V2 (borderless containers, column-based sections with accessories, buttons, and custom modal forms).
 
 ### 4. Autonomous Research Agents (`/agent`)
-Launch autonomous multi-step reasoning agents in private workspace threads. Ground them with saved message context snapshots or user profiles to perform investigations and data synthesis.
+Launch autonomous multi-step reasoning agents in private workspace threads. Ground them with saved message context snapshots or user profiles to perform deep web research or server diagnostics.
 
 ---
 
@@ -106,12 +110,26 @@ Launch autonomous multi-step reasoning agents in private workspace threads. Grou
 
 ---
 
-## Security and Sandboxing 
+## Security & Sandboxing
 
 * **Isolated Docker Execution:** GitHub test runs and automated fixes execute in ephemeral Docker containers with strict timeouts and memory boundaries.
 * **External Fork Protection:** Automated container execution is skipped on external untrusted forks unless explicitly authorized by a maintainer.
+* **Ephemeral Memory Controls:** Server members can purge long-term database records at any time using the `Reset AI Memory` context menu.
+
 ---
 
-## Feedback & Bug Reports
+## Legal & Policies
 
-Encounter an issue or have a feature request? Please [open an issue](https://github.com/PriestyAI/PriestyAI/issues) in this repository!
+* **End User Agreement & Terms of Service:** [View LICENSE.md](LICENSE.md)
+* **Privacy Policy:** [View PRIVACY.md](PRIVACY.md)
+* **Source Code & Self-Hosting:** [View Source Code on GitHub](https://github.com/Priestytheplushie/PriestyAI)
+
+---
+
+## Feedback, Bugs & Contributing
+
+All development, bug tracking, and feature requests are centralized in the primary source repository. 
+
+* **Report a Bug:** [Open an Issue](https://github.com/Priestytheplushie/PriestyAI/issues/new?template=bug_report.yml)
+* **Request a Feature:** [Submit a Feature Request](https://github.com/Priestytheplushie/PriestyAI/issues/new?template=feature_request.yml)
+* **Source Repository:** [Priestytheplushie/PriestyAI](https://github.com/Priestytheplushie/PriestyAI)
